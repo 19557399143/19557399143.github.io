@@ -1,0 +1,13 @@
+#div {
+    width: 9mm;
+    height: 9mm;
+    margin: 1mm 1mm 1mm 8mm;
+}
+#box {
+    background-color:#aaa;
+    width: 17mm;
+    height: 1cm;
+}
+div {
+    border-radius: 50%;
+}
