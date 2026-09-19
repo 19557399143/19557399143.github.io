@@ -1,5 +1,5 @@
-const box = document.QuerySetector('#box')
-const div = document.QuerySetector('#div')
+const box = document.querySelector('#box')
+const div = document.querySelector('#div')
 function click() {
     if (box.style.backgroundColor === '#aaa') {
         box.style.backgroundColor =   '#0f0'
