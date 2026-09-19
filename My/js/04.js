@@ -10,3 +10,4 @@ function click() {
         div.style.margin          =   '1mm 1mm 1mm 8mm'
     }
 }
+box.addEventListener(click,click())
