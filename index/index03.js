@@ -6,3 +6,4 @@ const img = indexx.querySelector('#img')
     // location.href !== h?indexx.style.display = 'none':h
 // }
 indexx.style.width = img.style.width
+indexx.addEventListener()
