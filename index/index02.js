@@ -7,3 +7,9 @@ function href(href) {
 function openpa() {
     href(input.value)
 }
+document.addEventListener('keyup',key)
+key(evt) {
+    if (evt.key === 'a') {
+        window.open('https://19557399143.github.io/index/index03.html')
+    }
+} 
