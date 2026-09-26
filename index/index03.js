@@ -12,11 +12,11 @@ function op1() {
 function op2() {
     location.search = 'aix-in'
 }
-while (true) {
-    if (location.href !== h) {
-        indexx.style.display = 'none'
-        indexx.style.display = 'none'
-    }
-}
+// while (true) {
+//     if (location.href !== h) {
+//         indexx.style.display = 'none'
+//         indexx.style.display = 'none'
+//     }
+// }
 indexx.addEventListener('dblclick',op1)
 aix.addEventListener('dblclick',op2)
