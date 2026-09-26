@@ -5,5 +5,4 @@ const img = indexx.querySelector('#img')
 // while (true) {
     // location.href !== h?indexx.style.display = 'none':h
 // }
-indexx.style.width = '133px'
 indexx.addEventListener()
