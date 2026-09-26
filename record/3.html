@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="wrap">
+  <li data-no="1">项目A</li>
+  <li data-no="2">项目B</li>
+  <li data-no="3">项目C</li>
+</div>
+
+<script>
+// 这就是你的对象
+const pathObj = {
+  1: "a路径",
+  2: "b路径",
+  3: "c路径"
+};
+
+const wrap = document.querySelector('#wrap');
+wrap.onclick = function(e){
+  if(e.target.tagName === 'LI'){
+    // 直接读取li身上存的编号，不用Array.from、不用indexOf
+    const no = e.target.dataset.no;
+    location.href = pathObj[no];
+  }
+}
+</script>
+</body>
+</html>
