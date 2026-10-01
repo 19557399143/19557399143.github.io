@@ -12,7 +12,7 @@ function ops(e) {
 if (location.search === '') {
     location.search = '?page=start'
 }
-if (new URLSearchParams(location.search.get('page')) !== 'start') {
+if (new URLSearchParams(location.search).get('page') !== 'start') {
     start.style.display = 'none'
 }
 start.addEventListener('dblclick',(e) => {ops(e.target.closest('[data-list]').dataset.list)})
