@@ -12,4 +12,4 @@ function ops(e) {
     start.style.display = 'none'
 
 }
-start.addEventListener('dblclick',() => {ops(e.target)})
+start.addEventListener('dblclick',(e) => {ops(e.target)})

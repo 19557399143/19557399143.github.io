@@ -1,7 +1,7 @@
-#indexx,#aix p {
+div div p {
     text-align: center;
 }
-#indexx,#aix {
+div div {
     width: 133px;
     display: inline-block;
 }

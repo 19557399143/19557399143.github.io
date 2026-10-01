@@ -1,8 +1,7 @@
 let input = document.getElementById('input')
 function href(href) {
     let dehref = window.location.href
-    let dhref = href
-    let open = window.open(`${dehref}/${dhref}`)
+    let open = window.open(href + dhref)
 }
 function openpa() {
     href(input.value)
@@ -12,3 +11,4 @@ key(evt) {
         window.open('https://19557399143.github.io/index/index03.html')
     }
 } 
+document.addEventListener('keyup',(e) => {key(e)})
