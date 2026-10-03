@@ -11,9 +11,10 @@ const lujing = {
 function qs(n) {
     return document.querySelector(n)
 }
-function ops(e) {
+function ops(e,n) {
     ee = e
     if (e.closest('[data-mm]').dataset.mm === '0' && e.closest('[data-mmm]').dataset.mmm === '') {
+        if(n === 1){body.style.backgroundColor = ''}
         location.search = lujing[e.closest('[data-list]').dataset.list]
     }
     else {
@@ -24,7 +25,7 @@ function ops(e) {
 function yanzhen() {
     if(text.value === lujing['0']) {
         ee.dataset.mmm = ''
-        ops(ee)
+        ops(ee,1)
     }
 }
 if (location.search === '') {
