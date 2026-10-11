@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>获取公网 IP</title>
+</head>
+<body>
+  <h2>你的公网 IP 是：<span id="ip">查询中…</span></h2>
+
+  <script>
+    // 方式1：fetch 调用公共 API
+    fetch('https://api.ipify.org?format=json')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('ip').textContent = data.ip;
+      })
+      .catch(err => {
+        document.getElementById('ip').textContent = '获取失败：' + err;
+      });
+  </script>
+</body>
+</html>
