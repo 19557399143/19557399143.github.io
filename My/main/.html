@@ -12,9 +12,19 @@
 </head>
 <body>
     <h1>Mycmd</h1>
-    <p id="p">starting</p>
+    <p id="p">starting<span></span></p>
     <script>
-        const p = doc
+        const p = document.querySelector('#p span')
+        let i = 0
+        setInterval(() => {
+            if (i = 4) {
+                i = 0
+                p.innerHTML = ''
+            } else {
+                i++
+                p.innerHTML += '.'
+            }
+        }, 800);
     </script>
 </body>
 </html>
